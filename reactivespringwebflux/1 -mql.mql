@@ -1,0 +1,24 @@
+db.getCollection('project').find({"name":"ProjectA"})
+
+db.getCollection('project').find({$and:[{"cost":3000},{"name":"ProjectA"}]})
+
+db.getCollection('project').find({$or:[{"cost":3000},{"name":"ProjectA"}]})
+
+
+db.getCollection('project').find({"cost":{$gt:2500}})
+
+
+db.getCollection('project').find({"cost":{$gt:2500},$or:[{"name":"ProjectB"},{"name":"ProjectA"}]})
+
+
+
+
+db.getCollection('project').find({"cost":{ $not: { $gt: 2500} } })
+
+db.getCollection('project').find( { countryList: { $in: [ "USA", "UK" ]} } )
+
+db.project.createIndex({name: "text", desc: "text"}, {name: "namedesctextindex"})
+
+https://docs.mongodb.com/manual/tutorial/query-documents/
+
+
