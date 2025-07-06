@@ -21,4 +21,4 @@ db.project.createIndex({name: "text", desc: "text"}, {name: "namedesctextindex"}
 
 https://docs.mongodb.com/manual/tutorial/query-documents/
 
-
+https://docs.spring.io/spring-data/mongodb/reference/mongodb/repositories/query-methods.html
